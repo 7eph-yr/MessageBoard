@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function createMessageElement(msg) {
     const div = document.createElement('div');
-    const isHuang = msg.name === '黄哥';
+    const isHuang = msg.name === 'HOST';
 
     div.className = `message-card p-4 rounded-lg ${
         isHuang ? 'message-left sender-huang' : 'message-right'

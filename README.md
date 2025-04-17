@@ -1,5 +1,7 @@
 # MessageBoard
 
+![demo](./demo.png)
+
 一个基于 Node.js + Express + SQLite 实现的简易实时免登录留言板，可用于在对方无法登录社交平台时与对方取得联系
 
 ## Feature

@@ -1,0 +1,71 @@
+body {
+    background-color: #f0f4f8; /* 加载时的过渡色（与图片主色调相近） */
+    background-image: url('/background.png');
+    background-size: cover; /* 覆盖整个视口 */
+    background-position: center; /* 图片居中 */
+    background-repeat: no-repeat; /* 不重复 */
+    background-attachment: fixed; /* 滚动时固定背景 */
+    min-height: 100vh; /* 确保body至少为视口高度 */
+}
+
+/* 增强内容区域的可读性 */
+.container {
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
+    backdrop-filter: blur(5px); /* 毛玻璃效果 */
+    border-radius: 0.5rem; /* 圆角 */
+    padding: 2rem;
+}
+
+#messages {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-size: contain; /* 小屏幕改为完整显示图片 */
+    }
+}
+
+/* 特殊样式 */
+.sender-huang .message-name {
+    color: #dc2626 !important; /* 红色 */
+    font-weight: bold;
+}
+
+/* 聊天式布局 */
+.message-card {
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.message-left {
+    margin-right: auto;
+    background-color: #f3f4f6;
+}
+
+.message-right {
+    margin-left: auto;
+    text-align: right; /* 新增 */
+    background-color: #bfdbfe;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* 布局反转 */
+.message-right .message-header {
+    flex-direction: row-reverse;
+}
+
+.message-right .message-content {
+    text-align: right;
+}

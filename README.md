@@ -19,6 +19,7 @@
 git clone https://github.com/7eph-yr/MessageBoard
 sudo apt install npm
 cd MessageBoard
+mkdir database
 npm init -y
 npm install
 tmux  // 可选

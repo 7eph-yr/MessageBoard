@@ -20,7 +20,7 @@ git clone https://github.com/7eph-yr/MessageBoard
 sudo apt install npm
 cd MessageBoard
 npm init -y
-npm install express sqlite3 socket.io
+npm install
 tmux  // 可选
 node server.js
 ```

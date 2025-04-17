@@ -3,23 +3,5 @@
     "express": "^5.1.0",
     "socket.io": "^4.8.1",
     "sqlite3": "^5.1.7"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "name": "messageboard",
-  "description": "一个基于 Node.js + Express + SQLite 实现的简易实时免登录留言板，可用于在对方无法登录社交平台时与对方取得联系",
-  "version": "1.0.0",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/7eph-yr/MessageBoard.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/7eph-yr/MessageBoard/issues"
-  },
-  "homepage": "https://github.com/7eph-yr/MessageBoard#readme"
+  }
 }
